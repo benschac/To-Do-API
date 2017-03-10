@@ -2,6 +2,7 @@ const Todo = require('../models').Todo
 
 module.exports = {
     create(req, res) {
+        console.log('hit todo controller')
         return ToDo
         .create({
             title: req.body.title,
